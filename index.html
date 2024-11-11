@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/index.js"></script>
+    <title>Wehelp 報名表</title>
+    <link rel="stylesheet" type="text/css" href="public/index.css"/>
+</head>
+<body>
+    
+    <div class="container">
+        <h1>Wehelp 第六屆申請表</h1>
+        
+        <section>
+            <h3>Q1:個人簡介和申請動機。</h3>
+            <hr/>
+            <div class="answer">
+                <span>A1:</span>
+                <button onclick="chang1()">個人簡介</button>
+                <button onclick="chang2()">申請動機</button>
+                <div id="about" class="son-style">
+                    <img src="img/1000003532.jpg" alt="my"/>
+                    <p>Hello~ 我叫正杰!!<br/>
+                        我畢業於修平科技大學，目前任職於萌陽農業科技，擔任莊園助理兼資訊管理人員，主要負責處理公司中所有硬體設備、網站的問題，透過WordPress為公司從0>>>1打造電商網站提供維護並更新。
+                        我的個性喜歡挑戰困難以及新事物，享受成長的感覺同時也喜歡感知並攫取生活中的每個美好剪影，在挑戰自我的過程也學習享受生活。</p>
+                </div>
+                <div id="Application-motivation" class="son-style">
+                    <p>
+                        &emsp;&emsp;關於申請動機，我認為Wehelp的訓練方式非常符合我的需求，透過給予目標，並給予些微引導，且在我進入死胡同時，有人可以與我一起討論，是我現階段所需要的，讓我有壓力的同時還能能夠自己思考，而不是以傳統的跟著老師寫離開老師就都毫無想法；
+                        另外WeHelp的收費相較於其他同類型的Bootcamp相對親民；以上就是我想要申請Wehelp的主要動機。<br/>
+                        &emsp;&emsp;另外，我必須先坦承，在去年申請WeHelp時確實是被軟體工程師那令人稱羨的高薪及工程師頭銜所吸引，以走捷徑的心態成為人人羨慕的工程師；在經過接近一年的沉澱及持續不斷的接觸及學習軟體工程的各類技術後，我的想法已經大大改變，
+                        我認為我的動機已經不是為了高薪與頭銜了，而是轉變成了我在享受寫程式與解決問題的思考過程，不管是學習程式的過程或者是讓一個簡單的系統從0到1的思考過程又或者是遇到BUG不斷翻找論壇與問爆GPT最終解決BUG的成就感，這一切的一切都令我沉醉其中；
+                        現在我可以很肯定的跟您表示，我的動機中絕對有一項是我喜歡、享受寫程式的過程，我想透過WeHelp打好我的基礎讓我有一個扎實的開頭，這樣我才能在這個領域持續不斷的鑽研，不斷地走下去。這也是我想申請Wehelp的動機之一。
+                    </p>
+                </div>
+            </div>
+        </section>
+        
+        <hr/>
+        
+        <section>
+            <h3>Q2:曾經做過哪些軟體工程技術相關的學習？若有作品請分享給我們。</h3>
+            <div class="answer">
+                <span>A2:</span>
+                <button onclick="FrontEnd()">前端學習</button>
+                <button onclick="BackEnd()">node.js會員登入及留言系統</button>
+                <button onclick="python()">python數據分析及機器學習</button>
+                <button onclick="other()"> 其他</button>
+                <div id="Front-end" class="son-style">
+                    <p>前端的部分，有學習Html、CSS與JavaScript，並透過三者結合做了一個小型前端網站在底部附上聯結。
+                        <h4>前端各項技術的學習及功能實現</h4>
+                        <li>HTML的部分學習了各個標籤的使用，並完成了結構化的網頁；在作品網站中HTML完成了網站的結構化與表單的設計。</li>
+                        <li>CSS的部分學習了如何使用各項屬性，完成網站的各項美術設計；在作品網站中，CSS完成了RWD & 版面設計。</li>
+                        <li>JavaScript的部分學習了JavaScript的基礎語法，完成一些互動設計；在作品網站的部分使用了HTML DOM完成按鈕的互動設計。</li>
+                        <span>我的前端作品:</span>
+                        <a href="https://aizenda.github.io/JavaScript/" target="_blank">
+                            <img src="img/github.png" alt="GitHub">
+                        </a>
+                    </p>
+                </div>
+
+                <div id="Back-end" class="son-style">
+                    <p>後端的部分，有學習Node.js、MongoDB架設小型伺服器，並結合前端做了一個小型留言板網站，在底部附上聯結。
+                        <h4>後端各項技術的學習及功能實現</h4>
+                        <li>Node.js的部分學習了套件管理(NPM)、Express、MongoDB的串接等；在作品網站中完成了本機伺服器架設、後端路由、邏輯、資料庫串接等等處理。</li>
+                        <li>MongoDB的部分學習了如何建立資料庫與集合並透過require載入mongodb進行資料庫操作；在作品網站中完成了結合mongodb模組建立資料庫與集合，並用邏輯運算查詢資料是否存在，以便後端邏輯處理。</li>
+                        <span>我的後端作品:</span>
+                        <a href="https://github.com/Aizenda/Node.JS/tree/social_networking_system" target="_blank">
+                            <img src="img/github.png" alt="GitHub">
+                        </a>
+                    </p>
+                </div>
+
+                <div id="python" class="son-style">
+                    <p>Python的部分，學習了數據分析、簡單網路爬蟲、簡單影像辨識、簡單機器學習。
+                        <h4>Python各項技術的學習及作品</h4>
+                        <li>數據分析部分，學習透過Numpy、Pandas、Matplotlib等庫完成數據的清理、分析並視覺化。</li>
+                        <li>網路爬蟲部分，學習透過BeautifulSoup、selenium等庫，並結合些許前端知識，繞過反爬且遵循網站規則的情況下抓取網站資料。</li>
+                        <li>影像辨識部分，學習OpenCV實現圖像的二值、侵蝕、切割最後透過模板匹配來達成辨識。</li>
+                        <li>機器學習部分，學習清理後資料加上sklearn及其他的庫完成數據降維、資料分割、模型訓練、模型效力評估等等。</li>
+                    </p>
+                    <span>Python作品:</span>
+                        <li><a href="https://github.com/Aizenda/Analysis-project/tree/main/Analysis" target="_blank">數據分析作品</a></li>
+                        <li><a href="https://github.com/Aizenda/Analysis-project/tree/main/web%20crawler" target="_blank">網路爬蟲作品</a></li>
+                        <li><a href="https://github.com/Aizenda/Analysis-project/tree/main/Image%20Recognition/%E4%BF%A1%E7%94%A8%E5%8D%A1%E5%BD%B1%E5%83%8F%E8%BE%A8%E8%AD%98" target="_blank">影像辨識作品</a></li>
+                        <li><a href="https://github.com/Aizenda/Analysis-project/tree/main/Machine%20Learning" target="_blank">機器學習作品</a></li>
+                        
+                </div>
+
+                <div id="other" class="son-style">
+                    <p>前端的部分，有學習Html、CSS與JavaScript，並透過三者結合做了一個小型前端網站。
+                        <h4>4</h4>
+                        <li>HTML的部分學習了各個標籤的使用，並完成了結構化的網頁。</li>
+                        <li>CSS的部分學習了使用各項屬性，完成了網站的各項美術設計。</li>
+                        <li></li>
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <hr/>
+        
+        <section>
+            <h3>Q3:如果參與這個訓練，會怎麼安排學習時間？</h3>
+            <div class="answer">
+                <div class="son-style">
+                    <span>A3:</span>
+                    <br/>
+                    <p>&emsp;&emsp;123</p>
+                </div>
+            </div>
+        </section>
+        
+        <hr/>
+        
+        <section>
+            <h3>Q4:軟體技術日新月異，如何確定選擇投入的領域是正確有回報的？</h3>
+            <div class="answer">
+                <div class="son-style">
+                    <span>A4:</span>
+                    <br/>
+                    <p>&emsp;&emsp;123</p>
+                </div>
+            </div>
+        </section>
+        
+        <hr/>
+        
+        <section>
+            <h3>Q5:請描述一件產生明顯負面情緒的經歷，如何處理該情緒？</h3>
+            <div class="answer">
+                <div class="son-style">
+                    <span>A5:</span>
+                    <br/>
+                    <p>&emsp;&emsp;123</p>
+                </div>
+            </div>
+        </section>
+        
+        <hr/>
+        
+        <section>
+            <h3>Q6:關於這份申請網頁，分享一個開發時的技術心得。</h3>
+            <div class="answer">
+                <div class="son-style">
+                    <span>A6:</span>
+                    <br/>
+                    <p>&emsp;&emsp;123</p>
+                </div>
+            </div>
+        </section>
+        
+        <hr/>
+        
+        <section>
+            <h3>Q7:如何看待自身工作和整個社會群體的連結關係？</h3>
+            <div class="answer">
+                <div class="son-style">
+                    <span>A7:</span>
+                    <br/>
+                    <p>&emsp;&emsp;123</p>
+                </div>
+            </div>
+        </section>
+        
+        <hr/>
+        
+        <section>
+            <h3>Q8:從上次提出申請至今，多做了哪些努力？</h3>
+            <div class="answer">
+                <div class="son-style">
+                    <span>A8:</span>
+                    <br/>
+                    <p>&emsp;&emsp;123</p>
+                </div>
+            </div>
+        </section>
+        
+        <hr/>
+        
+        <section>
+            <h3>Q9:其他想要對我們說的事情？</h3>
+            <div class="answer">
+                <div class="son-style">
+                    <span>A9:</span>
+                    <br/>
+                    <p>&emsp;&emsp;123</p>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html> 
